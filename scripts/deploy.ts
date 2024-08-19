@@ -4,11 +4,11 @@ async function main() {
   // const Token = await ethers.getContractFactory("CVIII");
   // const token = await Token.deploy("web3Bridge", "VIII");
   // await token.deployed();
-  const MyERC721 = await ethers.deployContract("MyERC721",["NAFK","NAF","QmXgLtjVRLaoXcoJ1b2mgzddLGyPdPTGChshUWBcMvMk45"]); 
-  await MyERC721.waitForDeployment();
+  const Token = await ethers.deployContract("Token",["NAFK","NAF",""]); 
+  await Token.waitForDeployment();
   
   console.log(
-    `MyERC721 contract deployed to ${MyERC721.target}`
+    `Token contract deployed to ${Token.target}`
   );
 }
 
